@@ -48,6 +48,8 @@ class Game extends Component {
 
     //check diagonal
     this.checkForMatches(squares[0], squares[4], squares[8]);
+    this.checkForMatches(squares[2], squares[4], squares[6]);
+
 
     if (!this.state.winner) {
       let clickedCounter = 0;
