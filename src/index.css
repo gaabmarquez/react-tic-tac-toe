@@ -1,0 +1,54 @@
+body {
+  font-family: monospace;
+  margin-top: 5%;
+  margin-left: 5%;
+
+}
+
+.game {
+  /* border: 1px dotted black; */
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+.c-square {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  padding-top: 20px;
+  cursor: pointer;
+  border: 1px solid black;
+
+}
+
+.c-player {
+  color: red
+}
+
+.board {
+  margin-top: 20px;
+  margin-left: 18%;
+
+}
+
+.X-player {
+  color: red;
+}
+
+.O-player {
+  color: green;
+}
+
+.initial {
+  color: blue;
+}
+
+.reset-button {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: 110px;
+
+}
