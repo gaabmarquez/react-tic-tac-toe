@@ -7,11 +7,6 @@ class App extends Component {
     title: "Welcome to this"
   };
 
-  onTitleClick = () => {
-    this.setState({
-      title: this.state.title + "!"
-    });
-  };
 
   render() {
     return (

@@ -49,12 +49,12 @@ class Board extends Component {
             value={this.state.squares[3]}
             initialValue={this.props.initialValue}
             updateSquare={() => this.updateValue(3)}
-          />{" "}
+          />
           <Square
             value={this.state.squares[4]}
             initialValue={this.props.initialValue}
             updateSquare={() => this.updateValue(4)}
-          />{" "}
+          />
           <Square
             value={this.state.squares[5]}
             initialValue={this.props.initialValue}
