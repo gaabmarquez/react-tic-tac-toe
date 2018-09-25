@@ -85,7 +85,7 @@ class Board extends Component {
         <br />
         {this.props.winner ? (
           <div>
-            <h3 className={this.props.winner + "-player"}>
+            <h3 className={this.props.winner + "-player text-center"}>
 
             {this.props.winner}
             </h3>

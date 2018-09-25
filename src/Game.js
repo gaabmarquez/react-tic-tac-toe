@@ -36,29 +36,14 @@ class Game extends Component {
   };
 
   checkForWinner = squares => {
-    //check horizontal
-    this.checkForMatches(squares[0], squares[1], squares[2]);
-    this.checkForMatches(squares[3], squares[4], squares[5]);
-    this.checkForMatches(squares[6], squares[7], squares[8]);
-
-    //check vertical
-    this.checkForMatches(squares[0], squares[3], squares[6]);
-    this.checkForMatches(squares[1], squares[4], squares[7]);
-    this.checkForMatches(squares[2], squares[5], squares[8]);
-
-    //check diagonal
-    this.checkForMatches(squares[0], squares[4], squares[8]);
-    this.checkForMatches(squares[2], squares[4], squares[6]);
-
-
     if (!this.state.winner) {
       let clickedCounter = 0;
-      for(let square of squares) {
+      for (let square of squares) {
         if (square !== this.initialValue) clickedCounter++;
       }
       if (clickedCounter === 9) {
         // tied
-       let  ties = 1 + this.state.ties;
+        let ties = 1 + this.state.ties;
         this.setState({
           ...this.state,
           currentPlayer: this.players[0],
@@ -67,6 +52,20 @@ class Game extends Component {
         });
       }
     }
+      //check horizontal
+      this.checkForMatches(squares[0], squares[1], squares[2]);
+      this.checkForMatches(squares[3], squares[4], squares[5]);
+      this.checkForMatches(squares[6], squares[7], squares[8]);
+
+      //check vertical
+      this.checkForMatches(squares[0], squares[3], squares[6]);
+      this.checkForMatches(squares[1], squares[4], squares[7]);
+      this.checkForMatches(squares[2], squares[5], squares[8]);
+
+      //check diagonal
+      this.checkForMatches(squares[0], squares[4], squares[8]);
+      this.checkForMatches(squares[2], squares[4], squares[6]);
+
   };
 
   checkForMatches(firstValue, secondValue, thirdValue) {
